@@ -1,7 +1,5 @@
 #!ipxe
-
-set base https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os
-
-kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img repo=${base}
-initrd ${base}/images/pxeboot/initrd.img
+ dhcp
+ kernel https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/images/pxeboot/vmlinuz
+ initrd https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/images/pxeboot/initrd.img
 boot
